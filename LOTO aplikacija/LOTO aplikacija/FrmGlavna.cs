@@ -47,5 +47,21 @@ namespace LOTO_aplikacija
             }
             
         }
+
+        private void btnOcisti_Click(object sender, EventArgs e)
+        {
+            txtPolumjer.Text = "0,00";
+            txtpovrsina.Text = "0,00";
+            txtOpseg.Text = "0,00";
+            IstRezultati.Items.Clear();
+        }
+
+        private void IstRezultati_DoubleClick(object sender, EventArgs e)
+        {
+            float polumjer = 0;
+            float.TryParse(IstRezultati.SelectedItem.ToString(), out polumjer);
+            txtPolumjer.Text = polumjer.ToString();
+            btnIzracunaj_Click(null, null);
+        }
     }
 }

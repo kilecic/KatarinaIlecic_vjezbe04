@@ -109,11 +109,13 @@
             // 
             // IstRezultati
             // 
+            this.IstRezultati.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.IstRezultati.FormattingEnabled = true;
             this.IstRezultati.Location = new System.Drawing.Point(246, 31);
             this.IstRezultati.Name = "IstRezultati";
             this.IstRezultati.Size = new System.Drawing.Size(113, 82);
             this.IstRezultati.TabIndex = 7;
+            this.IstRezultati.DoubleClick += new System.EventHandler(this.IstRezultati_DoubleClick);
             // 
             // btnIzracunaj
             // 
@@ -133,6 +135,7 @@
             this.btnOcisti.TabIndex = 9;
             this.btnOcisti.Text = "Očisti";
             this.btnOcisti.UseVisualStyleBackColor = true;
+            this.btnOcisti.Click += new System.EventHandler(this.btnOcisti_Click);
             // 
             // FrmGlavna
             // 
