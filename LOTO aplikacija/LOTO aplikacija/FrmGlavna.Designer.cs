@@ -123,6 +123,7 @@
             this.btnIzracunaj.TabIndex = 8;
             this.btnIzracunaj.Text = "Izračunaj";
             this.btnIzracunaj.UseVisualStyleBackColor = true;
+            this.btnIzracunaj.Click += new System.EventHandler(this.btnIzracunaj_Click);
             // 
             // btnOcisti
             // 
